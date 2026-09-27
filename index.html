@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tic-Tac-Toe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Tic&nbsp;Tac&nbsp;Toe</h1>
+  <p class="subtitle">Play against a friend, or challenge the computer.</p>
+
+  <div class="mode-select">
+    <button class="mode-btn active" data-mode="pvp">2 Players</button>
+    <button class="mode-btn" data-mode="pvc">Vs Computer</button>
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <div class="board" id="board"></div>
+
+  <div class="controls">
+    <button class="action" id="resetBtn">Reset Board</button>
+    <button class="action" id="scoreResetBtn">Reset Scores</button>
+  </div>
+
+  <div class="scoreboard">
+    <div class="score-item">
+      <div class="score-label">X wins</div>
+      <div class="score-value x" id="scoreX">0</div>
+    </div>
+    <div class="score-item">
+      <div class="score-label">Draws</div>
+      <div class="score-value d" id="scoreD">0</div>
+    </div>
+    <div class="score-item">
+      <div class="score-label" id="scoreOLabel">O wins</div>
+      <div class="score-value o" id="scoreO">0</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
